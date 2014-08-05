@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+
+    <package name = "default" 
+                  namespace="/" 
+                  extends = "struts-default">
+                  <action name ="operations">
+                  	<result>/Operations.jsp</result>
+                  </action>
+                  <action name ="dataoperations">
+                  	<result>/DataOperations.jsp</result>
+                  </action>
+                  <action  name = "Login">
+	                  <result>/Login.jsp </result>
+                  </action>
+                  <action  name = "Index">
+	                  <result>/index.jsp </result>
+                  </action>
+                  <action name ="Registration">
+                  	<result>/Registration.jsp</result>
+                  </action>
+                  
+                  <action name ="loginaction"
+                          class="com.globacomp.login.Loginbean">
+                          <result name= "input"> /Login.jsp</result>
+                           <result>/DataOperations.jsp</result> 
+                  </action>
+                        
+                
+                  
+                  <action name ="registeraction" 
+                          class = "com.globacomp.login.RegisterBean">
+                          <result name= "input">/Registration.jsp</result>
+                 <result> /DataOperations.jsp</result> 
+                          
+                          </action>
+  </package>
+    <!-- Add packages here -->
+
+</struts>

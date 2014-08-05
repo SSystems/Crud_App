@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	  <property name="hibernate.connection.driver_class">
+        oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">
+        jdbc:Oracle:thin:@localhost:1521/gcss</property>
+    <property name="hibernate.connection.username">
+        system</property>
+    <property name="hibernate.connection.password">
+        system1</property>
+    <property name="dialect">
+        org.hibernate.dialect.OracleDialect</property>
+	<property name="show_sql">true</property>	
+	<!-- 
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:gcss</property>
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="dialect">hibernate.dialect org.hibernate.dialect.OracleDialect</property> -->
+		<!--<mapping resource="beanpack/Department.hbm.xml"/>
+		--><mapping resource="com/globacomp/login/Login.hbm.xml"/>
+		<mapping resource="com/globacomp/login/Register.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
