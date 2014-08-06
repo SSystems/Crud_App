@@ -22,5 +22,6 @@
 		<!--<mapping resource="beanpack/Department.hbm.xml"/>
 		--><mapping resource="com/globacomp/login/Login.hbm.xml"/>
 		<mapping resource="com/globacomp/login/Register.hbm.xml"/>
+		<mapping resource="com/globacomp/login/LoginRegister.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

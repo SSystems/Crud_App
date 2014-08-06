@@ -20,6 +20,9 @@
                   <action  name = "Login">
 	                  <result>/Login.jsp </result>
                   </action>
+                   <action  name = "LoginRegistration">
+	                  <result>/LoginRegistration.jsp </result>
+                  </action>
                   <action  name = "Index">
 	                  <result>/index.jsp </result>
                   </action>
@@ -33,7 +36,11 @@
                            <result>/DataOperations.jsp</result> 
                   </action>
                         
-                
+                      <action name ="loginregisteraction"
+                          class="com.globacomp.login.LoginRegisterbean">
+                          <result name= "input"> /LoginRegistration.jsp</result>
+                           <result>/Operations.jsp</result> 
+                  </action>
                   
                   <action name ="registeraction" 
                           class = "com.globacomp.login.RegisterBean">

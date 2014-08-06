@@ -19,7 +19,7 @@
 
 
 
-<a href= "<s:url action='Registration'/>">
+<a href= "<s:url action='LoginRegistration'/>">
           Register
 </a>
 

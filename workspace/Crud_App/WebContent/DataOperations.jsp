@@ -12,6 +12,7 @@
 </head>
 <body>
 <h1> Data Operations </h1>
+
 <a href= "<s:url action='Registration'/>">
           Add New User
 </a>

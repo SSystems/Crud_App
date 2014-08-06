@@ -28,8 +28,9 @@ public class DataHelper {
 		 */
 		boolean flag = false;
 		if (obj != null && obj.getPassword().equals(password))
+			
 			flag = true;
-
+				
 		sessionobj.close();
 		factory.close();
 		return flag;
@@ -50,6 +51,25 @@ public class DataHelper {
 		// Write to DB
 		Transaction trans = sessionobj.beginTransaction();
 		sessionobj.persist(Reg);
+		trans.commit();
+		sessionobj.close();
+		factory.close();
+		return true;
+	}
+	public static boolean addloginuser(String username, String password) {
+
+		Configuration cfg = new Configuration();
+
+		cfg.configure();
+		SessionFactory factory = cfg.buildSessionFactory();
+		Session sessionobj = factory.openSession();
+		Loginbean newlog = new Loginbean();
+		newlog.setId(null);
+		newlog.setUsername(username);
+		newlog.setPassword(password);
+				// Write to DB
+		Transaction trans = sessionobj.beginTransaction();
+		sessionobj.persist(newlog);
 		trans.commit();
 		sessionobj.close();
 		factory.close();
