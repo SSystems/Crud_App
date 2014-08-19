@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<h1> Welcome to Struct 2 Data Application</h1>
+<h1> Welcome to Struts 2 Data Application</h1>
 <a href= "<s:url action='operations'/>">
           Continue
 </a>

@@ -7,7 +7,7 @@
 
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="false" />
-
+	 <constant name="struts.multipart.saveDir" value="C:/Users/Marketing/Documents/" />
     <package name = "default" 
                   namespace="/" 
                   extends = "struts-default">
@@ -16,6 +16,12 @@
                   </action>
                   <action name ="dataoperations">
                   	<result>/DataOperations.jsp</result>
+                  </action>
+                  <action name ="success">
+                  	<result>/Success.jsp</result>
+                  </action>
+                 <action name ="error">
+                  	<result>/Error.jsp</result>
                   </action>
                   <action  name = "Login">
 	                  <result>/Login.jsp </result>
@@ -29,6 +35,9 @@
                   <action name ="Registration">
                   	<result>/Registration.jsp</result>
                   </action>
+                    <action name ="uploadfile">
+                  	 		<result>/SecureUpload.jsp</result>
+                  </action>
                   
                   <action name ="loginaction"
                           class="com.globacomp.login.Loginbean">
@@ -41,6 +50,12 @@
                           <result name= "input"> /LoginRegistration.jsp</result>
                            <result>/Operations.jsp</result> 
                   </action>
+                   <action name="uploadaction" class="com.globacomp.upload.FileUploadAction">
+                 		<result name= "input"> /SecureUpload.jsp</result>
+                   		<result name="success">/Success.jsp</result>
+       					<result name="error">/Error.jsp</result>
+   					</action>
+   					
                   
                   <action name ="registeraction" 
                           class = "com.globacomp.login.RegisterBean">

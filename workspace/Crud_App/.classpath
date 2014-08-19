@@ -34,5 +34,7 @@
 	<classpathentry kind="lib" path="C:/Users/Administrator/workspace/Crud_App/WebContent/WEB-INF/lib/struts2-core-2.0.14.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/workspace/Crud_App/WebContent/WEB-INF/lib/xwork-2.0.7.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate JarFiles"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/workspace/Crud_App/WebContent/WEB-INF/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/workspace/Crud_App/WebContent/WEB-INF/lib/commons-io-2.4-sources.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

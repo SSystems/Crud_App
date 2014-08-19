@@ -16,7 +16,7 @@
 <s:textfield key="username"
              />
              
-<s:password  key= "password"
+<s:password key= "password"
              />
 <s:submit  label ="OK"/>
 

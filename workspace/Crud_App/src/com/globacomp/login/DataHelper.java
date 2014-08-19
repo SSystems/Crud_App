@@ -19,6 +19,7 @@ public class DataHelper {
 		Session sessionobj = factory.openSession();
 		Loginbean log = new Loginbean();
 		log.setUsername(username);
+		
 		// read from DB
 		Loginbean obj = (Loginbean) sessionobj.get(Loginbean.class, log);
 

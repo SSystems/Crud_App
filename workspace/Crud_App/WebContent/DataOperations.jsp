@@ -13,8 +13,17 @@
 <body>
 <h1> Data Operations </h1>
 
+<h3>Welcome: <s:property value="username"/></h3>
+<br>
 <a href= "<s:url action='Registration'/>">
           Add New User
 </a>
+<br>
+<a href= "<s:url action='uploadfile'/>">
+          Upload Document
+</a>
+<br>
+
+
 </body>
 </html>
