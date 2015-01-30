@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="defaultView" template="/WEB-INF/pages/template/template.jsp">
+		<put-attribute name="title" value="Globacomp sSystem" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/pages/template/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/pages/template/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+	</definition>
+
+	<definition name="exceptionView" extends="defaultView">
+		<put-attribute name="title" value="Globacomp sSystem - Exception Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/exception/exception.jsp" />
+	</definition>
+
+	<definition name="loginTemplate" template="/WEB-INF/pages/login/template.jsp">
+		<put-attribute name="title" value="Globacomp sSystem" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+	</definition>
+	<definition name="loginView" extends="loginTemplate">
+		<put-attribute name="title" value="Globacomp sSystem - Login" />
+		<put-attribute name="body" value="/WEB-INF/pages/login/login.jsp" />
+	</definition>
+	<definition name="registrationView" extends="loginTemplate">
+		<put-attribute name="title" value="Globacomp sSystem - SignUp" />
+		<put-attribute name="body" value="/WEB-INF/pages/login/registration.jsp" />
+	</definition>
+	<definition name="homeView" extends="defaultView">
+		<put-attribute name="title" value="Globacomp sSystem - Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/common/home.jsp" />
+	</definition>
+	
+	<!-- Cases -->
+	<definition name="caseUploadView" extends="defaultView">
+		<put-attribute name="title" value="Globacomp sSystem - Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/case/upload.jsp" />
+	</definition>
+	
+	<definition name="caseListView" extends="defaultView">
+		<put-attribute name="title" value="Globacomp sSystem - Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/case/list.jsp" />
+	</definition>
+</tiles-definitions>

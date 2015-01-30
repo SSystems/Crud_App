@@ -1,0 +1,88 @@
+/* ----------- Page Layout ----------- */
+#page-layout {
+	float:left;
+	width: 100%;
+	margin: 0 auto;
+	padding:0;
+	border:0;
+	text-align:center;
+}
+
+#header-panel {
+ 	float:left;
+	width:100%;
+	margin: 0 auto;
+	padding:0;
+	border:0;
+	height: 150px;
+	border: black solid thin;
+}
+
+#menu-panel {
+ 	float:left;
+	width:15%;
+	margin: 0 auto;
+	padding:0;
+	border: black thin solid;
+}
+
+#body-panel {
+	float:right;
+	display:block;
+	width:84%;
+	margin: 0px auto;
+	padding:0;
+	border:black thin solid;
+	text-align:center;
+	height:520px;
+	
+}
+
+#body-content {
+	clear:both;
+ 	float:left;
+	width:95%;
+	margin:0 auto;
+	padding: 10px 10px 10px 10px;
+	text-align:center;
+}
+
+#footer-panel {
+	clear:both;
+ 	float:left;
+	width:100%;
+	margin: 0 auto;
+	padding:0;
+	border: black thin solid;
+}
+
+/* ----------- Element Style Sheet ----------- */
+body {
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+
+.header-logo {
+	width:234px;
+	margin: 0 auto;
+	padding:0;
+	border:0;
+}
+
+.header-title {
+ 	margin: 0 auto;
+	padding:0 40px 0px 40px;
+	border:0;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.error {
+	font-color:red;
+}
